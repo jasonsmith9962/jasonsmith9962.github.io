@@ -1,0 +1,116 @@
+.container {
+    color: #5e6363;
+    font-family: 'Caveat', cursive;
+}
+.name {
+    font-size: 114px;
+}
+
+.lead {
+    font-size: 30px;
+}
+
+.aboutMe {
+    border: 7px solid black;
+    box-shadow: 5px 10px 8px 10px black;
+    border-radius: 1em;
+    border-top-right-radius: 10% 30%;
+    border-bottom-left-radius: 10% 30%;
+    margin: 20px 20px 20px 20px;
+    padding: 32px;
+    background-image: linear-gradient(#6b8686, gray);
+    
+    
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.title {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.section2 {
+    background-color: #606e7b;
+}
+
+.section1 {
+    background-color: #606e7b;
+}
+
+body {
+    background-color: #606e7b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project2 .card, .projects .card {
+    margin-bottom: 15px;
+    background-image: linear-gradient(#6b8686, gray);
+
+}
+.btn.btn-primary {
+    background-color: #606e7b;
+    border: #606e7b;
+}
+ .btn.btn-success {
+    background-color: #6b8686;
+    border: #6b8686;
+}
+
+.btn.btn-primary:hover, .btn.btn-success:hover {
+    background-color: black;
+}
+
+img {
+    height: 250px;
+    width: px;
+   
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+  }
+   
+img:hover {
+    width: 400px;
+    height: 400px;
+  }
+  a:hover {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 1s ease-out;
+  }
+  
+  a:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+      color: #dedede;
+  }
+ 
