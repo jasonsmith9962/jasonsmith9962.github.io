@@ -1,13 +1,6 @@
 .container {
-    color: #5e6363;
+    color: #606e7b;
     font-family: 'Caveat', cursive;
-}
-.name {
-    font-size: 114px;
-}
-
-.lead {
-    font-size: 30px;
 }
 
 .aboutMe {
@@ -51,6 +44,7 @@
 body {
     background-color: #606e7b;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .project2 .card, .projects .card {
@@ -63,36 +57,21 @@ body {
     border: #606e7b;
 }
  .btn.btn-success {
-    background-color: #6b8686;
-    border: #6b8686;
+    background-color: #7e8a8a;
+    border: #7e8a8a;
 }
 
 .btn.btn-primary:hover, .btn.btn-success:hover {
     background-color: black;
 }
 
-img {
-    height: 250px;
-    width: px;
-   
-    -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-         -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-            transition: all 1s ease;
-  }
-   
-img:hover {
-    width: 400px;
-    height: 400px;
-  }
-  a:hover {
+  .nav-link.active:hover {
     display: inline-block;
     position: relative;
     color: black;
   }
   
-  a:after {
+  .nav-link.active:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -105,7 +84,7 @@ img:hover {
     transition: transform 1s ease-out;
   }
   
-  a:after {
+  .nav-link.active:after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -113,4 +92,40 @@ img:hover {
   .navbar-light .navbar-nav .nav-link.active {
       color: #dedede;
   }
- 
+
+  .card {
+      position: relative;
+      overflow: auto;
+      border-radius:20px;
+      transition: .5s;
+      margin-top: 10px;
+      
+  }
+  .name { 
+    display: inline-block;
+    color: #dedede;
+    font-family: 'Caveat', cursive;
+    font-size: 114px;
+    animation: fadeIn linear 7s;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  .lead {
+    color: #dedede;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    animation: fadeIn linear 7s; 
+   }
+
+   .card:hover {
+    transform:scale(1.1);
+  }
+
+  .section3 {
+    margin-top: 5px;
+  }
